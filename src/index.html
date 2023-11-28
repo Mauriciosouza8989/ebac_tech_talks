@@ -7,18 +7,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>EBAC Tech Talks</title>
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
-            <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+            <img data-aos="fade-down" class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
+            <p data-aos="fade-left" class="hero__text">
+                O maior evento de tecnologia do Brasil  
+                <span class="contador"></span>
             </p>
+            <div data-aos="fade-right" class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2023 às 19:00
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div data-aos="fade-right" class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic asperiores, animi obcaecati eveniet dolore totam numquam tempore, architecto dignissimos praesentium dolorum quis voluptates, labore perspiciatis reiciendis amet unde.
+                </p>
+            </div>
+            <img  class="event__image" src="./images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ux-ui">
+        <div data-aos="fade-left" class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic asperiores, animi obcaecati eveniet dolore totam numquam tempore, architecto dignissimos praesentium dolorum quis voluptates, labore perspiciatis reiciendis amet unde.
+                </p>
+            </div>
+            <img  class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div data-aos="fade-right" class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic asperiores, animi obcaecati eveniet dolore totam numquam tempore, architecto dignissimos praesentium dolorum quis voluptates, labore perspiciatis reiciendis amet unde.
+                </p>
+            </div>
+            <img  class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+    <section class="event event--backend">
+        <div data-aos="fade-left" class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi hic asperiores, animi obcaecati eveniet dolore totam numquam tempore, architecto dignissimos praesentium dolorum quis voluptates, labore perspiciatis reiciendis amet unde.
+                </p>
+            </div>
+            <img  class="event__image" src="./images/backend.png" alt="Backend">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
